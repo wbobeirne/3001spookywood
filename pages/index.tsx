@@ -3,6 +3,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import clsx from "clsx";
 import Head from "next/head";
 import Image from "next/image";
+import { skeleton } from "../util/skeleton";
 import styles from "../styles/Home.module.css";
 
 const SHEET_ID = `173-N1JPfWFWx6--0_KwxknkyAdIk_J-2ad4uHApdxPw`;
@@ -73,6 +74,12 @@ const Home: NextPage = () => {
   const handleReset = useCallback(() => {
     setHasSubmitted(false);
     setHasSubmittedBefore(false);
+  }, []);
+
+  useEffect(() => {
+    const styles = `background: #000; color: #fff; font-size: 12px; line-height: 12px;`;
+
+    console.log(`%c${skeleton}`, styles);
   }, []);
 
   return (
