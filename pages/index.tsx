@@ -85,10 +85,19 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>welcome... TO UR DOOM!!11!1</title>
+        <title>ur invited... TO UR DOOM!!11!1</title>
         <meta
           name="description"
           content="you are invited to the sp00ki3st event of the season! hav e a nice FRIGHT! got em"
+        />
+        <meta property="og:title" content="ur invited... TO UR DOOM!!11!1" />
+        <meta
+          property="og:description"
+          content="you are invited to the sp00ki3st event of the season! hav e a nice FRIGHT! got em"
+        />
+        <meta
+          property="og:image"
+          content="https://www.3001spookywood.party/images/og.jpg"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
