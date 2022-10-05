@@ -28,6 +28,9 @@
 .intro strong:nth-child(0n+2) {
   color: #F0F;
 }
+.intro strong:nth-child(0n+3) {
+  color: #F00;
+}
 .intro a {
   font-size: 20px;
   font-style: italic;
@@ -53,13 +56,21 @@
 .refreshments strong:nth-child(0n+2) {
   color: #F0F;
 }
+.refreshments small {
+  font-size: 32px;
+}
+.refreshments small strong:first-child {
+  color: #FFF;
+  text-shadow: 0 0 10px #FFF;
+}
 
 .dancing {
   font-size: 48px;
   max-width: 880px;
 }
 .dancing strong:first-child {
-  color: #AAA;
+  color: #FFF;
+  text-shadow: 0 0 10px #FFF;
 }
 
 .dancing strong:nth-child(0n+2) {
@@ -82,6 +93,10 @@
   font-size: 44px;
   max-width: 880px;
 }
+.hosts strong {
+  color: #000;
+  text-shadow: 0 0 10px #F00, 0 0 2px #F00;
+}
 .hosts > div {
   display: flex;
   justify-content: space-between;
@@ -91,6 +106,9 @@
 .rsvpTitle {
   font-size: 60px;
   max-width: 880px;
+}
+.rsvpTitle strong {
+  color: #EF0;
 }
 
 .rsvp {

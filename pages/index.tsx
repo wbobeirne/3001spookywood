@@ -6,8 +6,6 @@ import Image from "next/image";
 import { skeleton } from "../util/skeleton";
 import styles from "../styles/Home.module.css";
 
-const SHEET_ID = `173-N1JPfWFWx6--0_KwxknkyAdIk_J-2ad4uHApdxPw`;
-
 const Home: NextPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -115,17 +113,18 @@ const Home: NextPage = () => {
         </h1>
         <p className={styles.intro}>
           you are invited to a spooktacular rager on{" "}
-          <strong>october 29th, 2021</strong> located at{" "}
-          <strong>3001 cherrywood road</strong>
+          <strong>october 29th, 2022</strong> from <strong>8pm til late</strong>{" "}
+          located at <strong>3001 cherrywood road</strong>
           <br />
-          <a href="#rsvp">
-            (take me to the rsvp i am a geneous and already know everything)
-          </a>
         </p>
 
         <p className={styles.refreshments}>
           there will be <strong>POISONOUS</strong> drinks and{" "}
           <strong>ROTTEN</strong> snacks
+          <br />
+          <small>
+            but bringing your own <strong>BOO</strong>ze is appreciated
+          </small>
         </p>
         <div className={styles.images}>
           <Image
@@ -137,8 +136,8 @@ const Home: NextPage = () => {
           <Image
             src="/images/skeleton-7.gif"
             alt="skeleton"
-            width={369}
-            height={480}
+            width={323}
+            height={420}
           />
         </div>
 
@@ -181,8 +180,8 @@ const Home: NextPage = () => {
           <Image
             src="/images/skeleton-5.gif"
             alt="skeleton"
-            width={1000}
-            height={1080}
+            width={500}
+            height={540}
           />
           <Image
             src="/images/pumpkin-1.gif"
@@ -193,7 +192,9 @@ const Home: NextPage = () => {
         </div>
 
         <div className={styles.hosts}>
-          <p>brought to you by your CURSED hosts</p>
+          <p>
+            brought to you by your <strong>CURSED</strong> hosts
+          </p>
           <div>
             <div>
               <Image
@@ -243,8 +244,8 @@ const Home: NextPage = () => {
             <div className={styles.images}>
               <Image
                 src="/images/skeleton-9.gif"
-                width={540}
-                height={540}
+                width={320}
+                height={320}
                 alt="skeleton"
               />
               <Image
@@ -255,8 +256,8 @@ const Home: NextPage = () => {
               />
               <Image
                 src="/images/skeleton-9.gif"
-                width={540}
-                height={540}
+                width={320}
+                height={320}
                 alt="skeleton"
               />
             </div>
@@ -278,6 +279,7 @@ const Home: NextPage = () => {
                 <input
                   name="name"
                   placeholder="(ur name)"
+                  required
                   value={name}
                   onChange={(ev) => setName(ev.currentTarget.value)}
                   disabled={isSubmitting}
@@ -320,7 +322,7 @@ const Home: NextPage = () => {
                 <input
                   type="email"
                   name="email"
-                  placeholder="ur email"
+                  placeholder="(ur email)"
                   value={email}
                   onChange={(ev) => setEmail(ev.currentTarget.value)}
                   disabled={isSubmitting}
